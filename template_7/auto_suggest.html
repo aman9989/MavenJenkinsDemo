@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Alerts Handling</title>
+  <meta name="description" content="Description of your site goes here">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>jQuery UI Autocomplete - Default functionality</title>
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+		"Afghanistan",
+		"Albania",
+		"Algeria",
+		"Andorra",
+		"Angola",
+		"Bahamas, The",
+		"Bahrain",
+		"Bangladesh",
+		"Barbados",
+		"Belarus",
+		"Cambodia",
+		"Cameroon",
+		"Canada",
+		"Cabo Verde",
+		"Central African Republic",
+		"Denmark",
+		"Djibouti",
+		"Dominica",
+		"Dominican Republic",
+		"East Timor (see Timor-Leste)",
+		"Ecuador",
+		"Egypt",
+		"Fiji",
+		"Finland",
+		"France",
+		"Germany",
+		"Ghana",
+		"Greece",
+		"Haiti",
+		"Holy See",
+		"Honduras"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  
+ 
+function myFunction() {  
+    document.getElementById("autoForm").submit();
+	window.open("https://www.google.com/","_blank");
+}
+ 
+  </script>
+</head>
+<body>
+<div id="container">
+	<div id="header"> <img src="images/logo.jpg" alt="" id="logo">
+	<h1 id="logo-text">Selenium with JAVA</h1>
+	</div>
+	
+	<div id="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">About&nbsp;us</a></li>
+			<li><a href="#">Recent&nbsp;articles</a></li>
+			<li><a href="#">Email</a></li>
+			<li><a href="#">Resources</a></li>
+			<li style="border-right: medium none;"><a href="#">Links</a></li>
+		</ul>
+	</div>
+	
+	<div id="site-content">
+		<div id="col-left">
+			<form id='autoForm' onSubmit="myFunction();">		
+				<div class="ui-widget">
+					<label for="tags" style="float:left;width:5%;">Tags: </label>
+					<input id="tags" style="margin-top:8px;margin-left: 10px;width:30%;">
+					<input type="submit" onclick="myFunction();" value="Go">
+				</div>
+			</form>
+		</div>
+
+		<div id="col-right">
+			<div style="padding: 30px 10px 10px;">
+				<h2 class="h-text-2">Exercises</h2>
+				<a href='locate_html_elements.html'><h3 class="h-text-3">HTML Elements Locators</h3></a>
+				<a href='nested_menus.html'><h3 class="h-text-3">Mouse Over Practice</h3></a>
+				<a href='alerts.html'><h3 class="h-text-3">Alert Handling Practice</h3></a>
+				<a href='iFrames.html'><h3 class="h-text-3">iFrame Handling</h3></a>
+				<a href='new_window.html'><h3 class="h-text-3">Windows Handling Practice</h3></a>
+				<a href='auto_suggest.html'><h3 class="h-text-3">AutoSuggestion Practice</h3></a>
+				
+			</div>
+			<div>&nbsp;</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<a href="http://www.htmltemplates.net">
+		<img src="images/designer.gif" class="copyright" alt="html templates"></a>
+		<p>&copy; Copyright 2017. Designed by <a target="_blank"
+		 href="http://btes.co.in/">BTES</a>
+		</p>
+	</div>
+</div>
+</body>
+</html>

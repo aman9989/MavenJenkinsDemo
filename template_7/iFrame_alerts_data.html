@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Alerts Handling</title>
+  <meta name="description" content="Description of your site goes here">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  
+	<script type="text/javascript">
+	 <!--
+		function Warn() {
+		   alert ("This is a warning message!");
+		   //document.write ("This is a warning message!");
+		}
+	 //-->
+	</script>
+
+	<script type="text/javascript">
+	 <!--
+		function getConfirmation(){
+		   var retVal = confirm("Do you want to continue ?");
+		   if( retVal == true ){
+			  document.write ("User wants to continue!");
+			  return true;
+		   }
+		   else{
+			  document.write ("User does not want to continue!");
+			  return false;
+		   }
+		}
+	 //-->
+	</script>
+
+	<script type="text/javascript">
+	 <!--
+		function getValue(){
+		   var retVal = prompt("Enter your name : ", "your name here");
+		   document.write("You have entered : " + retVal);
+		}
+	 //-->
+	</script>
+</head>
+<body>
+<div id="container">
+	<div id="site-content">
+		<div id="col-left">
+		<h1>Alerts Handling</h1>
+			<p>Click the following button to see the result: </p>
+			<form>
+				<input type="button" value="Alert Box" onclick="Warn();" />
+			</form> 
+		</div>
+	</div>
+</div>
+</body>
+</html>

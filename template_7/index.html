@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Learn Selenium</title>
+  <meta name="description" content="Description of your site goes here">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+</head>
+<body>
+
+<div id="container">
+	<div id="header"> <img src="images/logo.jpg" alt="" id="logo">
+		<h1 id="logo-text">Selenium with JAVA</h1>
+	</div>
+	<div id="nav">
+		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="#">About&nbsp;us</a></li>
+		  <li><a href="#">Recent&nbsp;articles</a></li>
+		</ul>
+		
+		<div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input id="tags">
+</div>
+	</div>
+	
+	<div id="site-content">
+		<div id="col-left">
+		<h1 class="h-text-1">Selenium With JAVA</h1>
+		<p class="text-1"><strong>Selenium - 3 Requirements</strong></p>
+		<ul class="list-1">
+			<li>JAVA 1.8</li>
+			<li>Eclipse Editor</li>
+			<li>Selenium - 3 JAR files</li>
+			<li>Firefox Browser (Version 50+)</li>
+			<li>Gecko Driver ( Executable File to Launch Firefox Browser )</li>
+			<li>Firepath ( Firefox Add Ons )</li>
+			<li>Firebug ( Firefox Add Ons )</li>
+		</ul>
+		 
+		<p class="border-1">&nbsp;</p><br/>
+		<p class="text-1"><strong>Selenium - 2 Requirements</strong></p>
+		<ul class="list-1">
+		  <li>JAVA 1.7 or JAVA 1.8</li>
+		  <li>Eclipse Editor</li>
+		  <li>Selenium - 2.53 JAR files</li>
+		  <li>Firefox Browser (Version 41 to 47)</li>
+		  <li>Firepath ( Firefox Add Ons )</li>
+		  <li>Firebug ( Firefox Add Ons )</li>
+		</ul>
+		 
+		 
+		</div>
+		<div id="col-right">
+			<div style="padding: 30px 10px 10px;">
+				<h2 class="h-text-2">Exercises</h2>
+				<a href='locate_html_elements.html'><h3 class="h-text-3">HTML Elements Locators</h3></a>
+				<a href='nested_menus.html'><h3 class="h-text-3">Mouse Over Practice</h3></a>
+				<a href='alerts.html'><h3 class="h-text-3">Alert Handling Practice</h3></a>
+				<a href='iFrames.html'><h3 class="h-text-3">iFrame Handling</h3></a>
+				<a href='new_window.html'><h3 class="h-text-3">Windows Handling Practice</h3></a>
+				<a href='auto_suggest.html'><h3 class="h-text-3">AutoComplete Practice</h3></a>
+				
+			</div>
+			<div>&nbsp;</div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<!--DO NOT Remove The Footer Links-->
+		<!--Designed by--><a href="http://www.htmltemplates.net">
+		<img src="images/designer.gif" class="copyright" alt="html templates"></a>
+		<p>&copy; Copyright 2017. Designed by <a target="_blank"
+		 href="http://btes.co.in/">BTES</a>
+		<!--DO NOT Remove The Footer Links-->
+		</p>
+	</div>
+	
+</div>
+</body>
+</html>
